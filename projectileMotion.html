@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projectile Motion</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Projectile Motion Visualization</h1>
+    <div class="inputForm">
+      <label for="initalVelocity">Initial Velocity :</label>
+      <input
+        type="number"
+        aria-label="Initial Velocity"
+        placeholder="Please Enter Initial Velocity"
+        name="initialVelocity"
+        id="initialVelocity"
+        style="width: 200px"
+      />
+      <label for="projectileAngle">Projectile Angle :</label>
+      <input
+        type="number"
+        aria-label="Projectile Angel"
+        placeholder="Please Enter Angle of Projection"
+        name="projectileAngle"
+        id="projectileAngle"
+        style="width: 200px"
+      />
+      <button id="launch" onclick="handleLaunch()">Launch</button>
+    </div>
+    <canvas id="myChart" style="width: 100%; max-width: 700px"></canvas>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script src="./scripts.js"></script>
+</html>

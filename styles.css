@@ -1,0 +1,46 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputForm {
+  margin-bottom: 50px;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+}
+
+#launch {
+  background-color: red;
+  outline: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 25px;
+  cursor: pointer;
+  border: none;
+}
+
+#launch:hover {
+  background-color: brown;
+}
